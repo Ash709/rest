@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet and Chilly Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dancing+Script:wght@400..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(4, 4, 47);
+            color: white;
+            padding: 20px;
+        }
+
+        .logo {
+            border: 5px solid white;
+            padding: 10px;
+            background-color: burlywood;
+            color: darkred;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
+
+        ul li {
+            padding: 10px;
+        }
+
+        button {
+            background-color: burlywood;
+            padding: 10px 20px;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .sec1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: hotel 7s linear alternate infinite;
+        }
+
+        @keyframes hotel {
+            0% {
+                background-image: url('https://th.bing.com/th?id=OIP.oetnNwsceeQQo36_Qz27MQHaE8&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2');
+            }
+            40% {
+                background-image: url('https://th.bing.com/th?id=OIP.QONnfLxMWp9_84B-ld7pQQHaE8&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2');
+            }
+            80% {
+                background-image: url('https://th.bing.com/th/id/OIP.R6Y1yAxnp-z9WLbjv0ph-AHaE8?w=286&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+            }
+            100% {
+                background-image: url('https://th.bing.com/th/id/OIP.LAKlyp7D03xGufDu_LE6mAHaE8?w=271&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+            }
+        }
+
+        .textSec1 {
+            color: white;
+            text-align: center;
+        }
+
+        .sec2, .sec3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .sec2 img, .sec3 img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: burlywood;
+            padding: 20px;
+            gap: 20px;
+            transition: background-color 3s linear;
+        }
+
+        .box:hover {
+            background-color: brown;
+        }
+
+        .box2, .box3, .box4 {
+            border: 5px solid black;
+            border-radius: 50px;
+            width: 100%;
+            max-width: 430px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .background {
+            background-image: url("https://th.bing.com/th/id/OIP.GjIwCh89aXCNSbCMbriWkwAAAA?w=289&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            font-size: 30px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer i {
+            cursor: pointer;
+        }
+
+        @media only screen and (min-width: 768px) {
+            nav ul {
+                display: flex;
+            }
+            
+            .sec1 {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .textSec1 {
+                text-align: left;
+                margin-left: 50px;
+            }
+
+            .box {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SWEET AND CHILLY RESTAURANT</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li><button>BOOK RESERVATIONS</button></li>
+        </ul>
+    </nav>
+
+    <div class="sec1">
+        <div class="textSec1">
+            <h1>CRAVE FOR SOMETHING SWEET AND SPICY?</h1>
+            <h2>VISIT OUR RESTAURANT</h2>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="box5"></div>
+
+    <div class="text8">
+        <ul>
+            <li>LOCATE US<br>HASTSAL ROAD, WEST DELHI<br>NEW DELHI-110059</li>
+            <li>Open Hours<br>Everyday from 12:00 NOON - 1:00 AM</li>
+            <li>Reservation<br>9999537128</li>
+        </ul>
+    </div>
+
+    <div class="sec2">
+        <img src="https://ganeshdutt100.github.io/Foodies-G.D/img-1.png" alt="">
+        <div class="text2">
+            <h1 style="color: navy;">We pride ourselves on making real food from the best ingredients.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="sec3">
+        <img src="https://ganeshdutt100.github.io/Foodies-G.D/img-2.png" alt="">
+        <div class="text3">
+            <h1>We make everything by hand with the best possible ingredients.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+            <button>View All Projects</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="text4">
+            <h1>WE ARE HAVING OFFER THIS FESTIVE SEASON ON HOME DELIVERY:</h1>
+            <p>GET 40% OFF ON ORDER ABOVE Rs.1999</p>
+            <button>ORDER NOW</button>
+        </div>
+    </div>
+
+    <div
